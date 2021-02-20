@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height-device-height, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Aqui chamamos nosso arquivo css externo -->
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>MOBILIZA</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <aside>
+        <div class="logo">
+          <img src="assets/1mobiliza.png" alt="logo" />
+          <span>Mobiliza</span>
+          <p>SUA PLATAFORMA DE AGENDAMENTOS E ENTREGA DE PRODUTOS</p>
+
+          <div class="menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+            </ul>
+            <ul>
+              <li><a href="#objetivo">Objetivo</a></li>
+            </ul>
+            <ul>
+              <li><a href="#quemsomos">Quem Somos</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content">
+        <section id="home">
+          <h1>Seja Bem-Vindo(a)!</h1>
+
+          <div class="login">
+            <!-- área de login -->
+            <h4>Já é inscrito?</h4>
+            <form action="index.html" method="GET">
+              <table class="format">
+                <tr>
+                  <td>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit">Entrar</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+
+          <div class="cadastro">
+            <!-- área de cadastro -->
+            <p>
+              <b>
+              Quer fazer parte do nosso time? Mas não sabe como? Realize seu
+              cadastro, que entraremos em contato.
+              </b>
+            </p>
+            <br/>
+            <p>
+              ( Pré requisito, Idade mínima 18 anos no ato da inscrição e estar
+              cursando ou já ter concluído pelo menos ensino médio)
+            </p>
+            <form action="index.html" method="GET">
+              <table class="format">
+                <tr>
+                  <td>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="nascimento">Nascimento:</label>
+                    <input type="text" id="nascimento" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="contato">Contato:</label>
+                    <input type="text" id="contato" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="rg">RG:</label>
+                    <input type="text" id="rg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit">Cadastrar</button>
+                  </td>
+                </tr>
+              </table>
+              <p><b>Ainda sobre você...</b></p>
+              <table class="format sobre">
+                <!-- ESCOLARIDADE -->
+                <tr>
+                  <td>
+                    <label for="escolaridade">Já concluiu ensino médio?</label>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="escolaridade" id="sim" value="sim">
+                    <label for="sim">SIM</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="escolaridade" id="nao" value="nao">
+                    <label for="nao">NÃO</label>
+                  </td>
+                </tr>
+                <!-- PROGRAMA DO GOVERNO -->
+                <tr>
+                  <td>
+                    <label for="escolaridade">Está inserido em algum programa do Governo?</label>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="programa" id="sim" value="sim">
+                    <label for="sim">SIM</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="programa" id="nao" value="nao">
+                    <label for="nao">NÃO</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="escolaridade"><b>Se a resposta for sim, qual o programa?</b></label>
+                    <input type="text" name="programa" id="programa">
+                  </td>
+                </tr>
+                <!-- TERMO DE RESPONSABILDADE -->
+                <tr>
+                  <td>
+                    <label for="veracidade" style="font-style: italic; font-size: 14px;">
+                      <b>Declaro que li os pré-requisitos e confirmo 
+                      a veracidade das informações por mim prestadas.</b>
+                    </label>                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="veracidade" id="sim" value="concordo">
+                    <label for="sim">Concordo</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="veracidade" id="nao" value="naoconcordo">
+                    <label for="nao">Não Concordo</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit">Enviar</button>
+                  </td>
+                </tr>
+              </table>
+              <!-- PROCURA DO ENTREGADOR -->
+              <p>
+                <b>
+                Procurando um entregador mais próximo de sua região? 
+                Digite o seu endereço, para localizarmos o entregador.
+              </b>
+              </p>
+              <table class="format busca">                
+                <tr>
+                  <td>
+                    <label for="apelido">Como deseja ser chamado?</label>
+                    <input type="text" name="apelido" id="apelido">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit">Enviar</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+
+            <p class="textEmpresa"><b>Conheça o processo de desenvolvimento da nossa empresa:</b></p>            
+            <div class="images">
+              <img src="assets/processo.jpg" alt="">
+              <img src="assets/i1.jpg" alt="">
+              <img src="assets/img transp.jpg" alt="">
+              <img src="assets/motoboy.jpg" alt="">
+              <img src="assets/entregador.png" alt="">
+              <img src="assets/entregador.webp" alt="">
+            </div>
+
+          </div>
+        </section>
+        <hr />
+
+        <section id="objetivo">
+          <h1>Obejtivo</h1>
+          <p>
+            Expandir os serviços de entrega, focando em maior comodidade ao
+            usuário, através da descentralização do serviço!
+          </p>
+        </section>
+        <hr />
+
+        <section id="quemsomos">
+          <h1>Quem Somos?</h1>
+          <p>
+            A MOBILIZA é uma empresa de tecnologia, voltada à inclusão social,
+            através da entrega de produtos realizados via e-commerce.
+          </p>
+        </section>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
